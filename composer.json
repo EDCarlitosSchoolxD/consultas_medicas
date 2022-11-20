@@ -1,0 +1,17 @@
+{
+    "name": "edcarlitosxd/consultas_medicas",
+    "description": "App Consultas medicas",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    },
+    "authors": [
+        {
+            "name": "EDCarlitosSchoolxD",
+            "email": "uxdj050728hqrczna1@cbtis111.edu.mx"
+        }
+    ],
+    "require": {}
+}
