@@ -10,5 +10,5 @@ $db  = conectarDB();
 
 ActiveRecord::setDB($db);
 
-
+session_start();
 
