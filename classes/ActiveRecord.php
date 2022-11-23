@@ -29,6 +29,23 @@ class ActiveRecord{
 
     }
 
+    public static function all(){
+        $query = "SELECT * FROM ". static::$table;
+        $resultado = self::$db->query($query);
+        
+
+        $array = [];
+        while($res = $resultado->fetch_assoc()){
+            $array[]= static::createObjects($res);
+        }
+
+        $resultado->free();
+
+        return $array;
+
+
+    }
+
 
     public static function where($columna,$operacion,$valor){
 

@@ -7,7 +7,6 @@ include('./includes/App.php');
     if($_POST){
         $usuario = new Usuario($_POST);
         $usuario->save();
-
     }
 
 
