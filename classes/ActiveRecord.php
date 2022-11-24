@@ -24,7 +24,7 @@ class ActiveRecord{
             return $resultado;
 
         } catch (\Throwable $th) {
-            echo "Algo salio mal";
+            echo $th;
         }
 
     }

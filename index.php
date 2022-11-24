@@ -158,6 +158,10 @@ $doctoresJson = json_encode($doctores);
         if(response == "Guardado correctamente"){
             mensaje.classList.add("bg-green-400");
             mensaje.innerText = "Enviado Correctamente"
+
+            const fetchData = await axios.post('./correo.php',JSON.stringify(Object.fromEntries(formulario)))
+            const response = fetchData.data;
+        console.log(response);
             return 0;
         }
 

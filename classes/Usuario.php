@@ -30,6 +30,7 @@ class Usuario extends ActiveRecord{
 
         if(password_verify($args['contrasenna'],$usuario[0]->contrasenna)){
             $_SESSION['usuarioId'] = $usuario[0]->id;
+            $_SESSION['usuarioEmail'] = $usuario[0]->email;
             $_SESSION['usuario'] = $usuario[0]->usuario;
             header('Location: /');
         }else{
